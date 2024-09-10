@@ -18,7 +18,14 @@ function encontrarNumeroDeLetra( letra, nombre ) {
     return numeroDeLetras;
 }
 
-function manejoDelEventodeInputNombre(){
-    console.log("Me estoy invocando");
+function leerValorDenombre(){
+    const inputNombre = document.getElementById("nombre");
+    return inputNombre.value;
 }
-console.log(encontrarNumeroDeLetra("a", "estefany"));
+
+function manejoDelEventodeInputNombre(){
+ const nombre = leerValorDenombre();
+ console.log( nombre );    
+}
+
+//console.log(encontrarNumeroDeLetra("a", "estefany"));
