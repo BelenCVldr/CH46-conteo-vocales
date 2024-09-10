@@ -24,8 +24,9 @@ function leerValorDenombre(){
 }
 
 function manejoDelEventodeInputNombre(){
- const nombre = leerValorDenombre();
- console.log( nombre );    
+ const nombre = leerValorDenombre().toLowerCase();
+ const numLetraA = encontrarNumeroDeLetra("a", nombre);
+ console.log("Num letras A: " + numLetraA);
 }
 
 //console.log(encontrarNumeroDeLetra("a", "estefany"));
