@@ -24,7 +24,8 @@ function leerValorDenombre(){
 }
 
 function imprimirResultado( resultado ){
-    console.log(resultado);
+    const paragraph = document.getElementById("vocales");
+    paragraph.innerHTML = resultado;
 
 }
 
