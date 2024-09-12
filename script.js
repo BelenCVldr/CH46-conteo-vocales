@@ -23,10 +23,13 @@ function leerValorDenombre(){
     return inputNombre.value;
 }
 
+function imprimirResultado( resultado ){
+    console.log(resultado);
+
+}
+
 function manejoDelEventodeInputNombre(){
  const nombre = leerValorDenombre().toLowerCase();
  const numLetraA = encontrarNumeroDeLetra("a", nombre);
- console.log("Num letras A: " + numLetraA);
+ imprimirResultado("Num letras A: " + numLetraA);
 }
-
-//console.log(encontrarNumeroDeLetra("a", "estefany"));
